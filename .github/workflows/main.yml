@@ -11,8 +11,11 @@ jobs:
         with:
           node-version: '12.x'
       - name: Run Lighthouse on urls
-        uses: treosh/lighthouse-ci-action@v2
+        uses: treosh/lighthouse-ci-action@slack-integration
         with:
           urls: |
             https://treo.sh/
             https://treo.sh/demo
+          logLevel: 'info'
+          githubNotification: 1
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
