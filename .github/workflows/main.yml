@@ -2,13 +2,20 @@
 name: LHCI-upload-artifact
 on: push
 jobs:
-  hermetic-basic:
+  assert-on-budget:
     runs-on: ubuntu-latest
     steps:
-      - uses: treosh/lighthouse-ci-action@v2
+      - uses: actions/checkout@master
+      - name: Use node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
       - name: Run Lighthouse on urls
-        uses: ./
+        uses: treosh/lighthouse-ci-action@slack-integration
         with:
           urls: |
             https://treo.sh/
             https://treo.sh/demo
+          logLevel: 'info'
+          githubNotification: 1
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
