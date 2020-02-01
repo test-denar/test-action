@@ -17,5 +17,6 @@ jobs:
             https://treo.sh/
             https://treo.sh/demo
           logLevel: 'info'
+          slackNotification: 1
           githubNotification: 1
           githubToken: ${{ secrets.GITHUB_TOKEN }}
