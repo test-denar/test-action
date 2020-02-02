@@ -21,4 +21,4 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN_PERMISSIONS }}  
           slackNotification: 1
           githubNotification: 1
-          staticDistDir: ../lh-res 
+          resultsPath: ../lh-res 
