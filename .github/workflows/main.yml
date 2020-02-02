@@ -19,6 +19,5 @@ jobs:
           logLevel: 'info'
           slackWebhookUrl: ${{ secrets.SLACK_WEBHOOK_URL }}
           githubToken: ${{ secrets.GITHUB_TOKEN_PERMISSIONS }}
-          configPath: '.github/lighthouserc-custom-config.json'
           slackNotification: 1
           githubNotification: 1
