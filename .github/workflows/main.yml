@@ -18,6 +18,7 @@ jobs:
             https://treo.sh/demo
           logLevel: 'info'
           slackWebhookUrl: ${{ secrets.SLACK_WEBHOOK_URL }}
-          githubToken: ${{ secrets.GITHUB_TOKEN_PERMISSIONS }}
+          applicationGithubToken: ${{ secrets.GITHUB_TOKEN }}
+          personalGithubToken: ${{ secrets.GITHUB_TOKEN_PERMISSIONS }}
           slackNotification: 1
           githubNotification: 1
