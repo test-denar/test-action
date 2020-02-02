@@ -1,7 +1,7 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./test"
+      "staticDistDir": "./test",
       "settings": {
         "configPath": ".github/desktop-config.js"
       }
