@@ -21,5 +21,6 @@ jobs:
           applicationGithubToken: ${{ secrets.GITHUB_TOKEN }}
           personalGithubToken: ${{ secrets.GITHUB_TOKEN_PERMISSIONS }}
           budgetPath: '.github/budget.json'
-          slackNotification: 1
-          githubNotification: 1
+          notfications: |
+            'slack'
+            'github'
