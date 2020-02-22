@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: '12.x'
       - name: Run Lighthouse on urls
-        uses: treosh/lighthouse-ci-action@slack-integration
+        uses: treosh/lighthouse-ci-action@notifications-tuning
         with:
           urls: |
             https://treo.sh/
